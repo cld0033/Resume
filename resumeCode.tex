@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Ches Davidson
+% Based off of: https://github.com/cld0033/Resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[8]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+      \textit{\small#7} & \textit{\small #8} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeJobheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Chester Davidson} \\ \vspace{1pt}
+    \small 423-364-1544 $|$ \href{mailto:x@x.com}{\underline{cld0033@auburn.edu}} $|$ 
+    \href{https://linkedin.com/in/chesterdavidson}{\underline{linkedin.com/in/chesterdavidson}} $|$
+     \href{https://github.com/cld0033}{\underline{github.com/cld0033}}
+\end{center}
+
+\section{Objective}
+    \begin{center}Results-driven professional currently pursuing a degree in Computer Science. Leveraging my previous management and leadership experience to find a Software Engineering Internship.\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Auburn University}{Auburn, Al}
+      {Bachelor of Science in Computer Science}{Jan. 2024 -- Dec. 2025}
+      {Masters of Science in Exercise Physiology}{Aug. 2017 -- Aug. 2018}
+      {Bachelor of Science in Kinesiology}{Aug. 2013 -- May 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    
+    \resumeJobheading
+    {Forever Florida Real Estate}{St. Petersburg, Fl}
+    {Realtor}{Mar. 2023 -- Present}
+    \resumeItemListStart
+        \resumeItem{Advised clients on market trends, property values, and investment opportunities, enabling them to make informed decisions and achieve their real estate goals.}
+        \resumeItem{Utilized effective negotiation skills to secure favorable terms and agreements for clients, maximizing their financial outcomes.}
+        \resumeItem{Developed and executed comprehensive marketing strategies for properties, including professional photography, virtual tours, and targeted online and offline campaigns.}
+        \resumeItem{Consistently met and exceeded sales targets, earning recognition as a top performer within the company.}
+    \resumeItemListEnd
+    \resumeJobheading
+    {Cherokee Town and Country Club}{Atlanta, Ga}
+    {Swim and Fitness Operations Manager}{Sept. 2019 -- Mar. 2023}
+    \resumeItemListStart
+        \resumeItem{Managed overall operations of fitness centers, pools, and member locker rooms}
+        \resumeItem{Led multiple successful capital projects and renovations, enhancing facility appeal and functionality.}
+        \resumeItem{Tracked employee time-cards and maintained payroll data accuracy.}
+        \resumeItem{Supervised and efficiently scheduled a team of 20+ employees, ensuring their productivity and safety.}
+        \resumeItem{Conducted interviews, made hiring decisions, and provided comprehensive training to new and existing staff.}
+        \resumeItem{Oversaw procurement and inventory management for essential facility operation}
+    \resumeItemListEnd
+        
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Title}{Dates}
+%     \resumeItemListStart
+%        \resumeItem{}
+%          {}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+   
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf {Spherocylinder Calculator} $|$ Java, JUnit}{March 2024}
+        \resumeItemListStart
+            \resumeItem{Created classes to define an Spherocylinder and an array of Spherocylinder}
+            \resumeItem{Defined methods to be able to calculate total and average Surface Area's and Volumes of each element in array}
+            \resumeItem{Programmed Test cases using the JUnit framework to achieve conditional coverage}
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf {Cloud Data Cost} $|$ Java, JUnit}{April 2024}
+        \resumeItemListStart
+            \resumeItem{Developed classes to represent different types of data}
+            \resumeItem{Programmed a Scanner to read in data points and calculate the current cost of data coverage}
+            \resumeItem{Implemented JUnit to test the methods ensuring functionality across all classes}
+        \resumeItemListEnd
+        \resumeProjectHeading
+        {\textbf{Rock, Paper, Scissors} $|$ HTML/CSS, JavaScript}{May 2024}
+        \resumeItemListStart
+            \resumeItem{Developed a mini game of Rock, Paper, Scissors to be played in the browser}
+            \resumeItem{Used JavaScript to program the interface of the game and CSS to style the page}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, HTML/CSS, JavaScript (learning)} \\
+     \textbf{Frameworks}{:JUnit} \\
+     \textbf{Developer Tools}{: Git, IntelliJ, VS Code} \\
+     
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
